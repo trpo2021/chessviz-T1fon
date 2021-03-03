@@ -15,8 +15,6 @@ void printBoard()
        	"RNBQKBNR"
 	};
 
-	char step[20] = "00000000000000000000";
-
     int i, j;
     printf("\n");
     for (i = 0; i < 8; i++) 
