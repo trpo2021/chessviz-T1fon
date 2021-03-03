@@ -4,18 +4,18 @@
 void printBoard()
 {
 	char board[8][8]
-        = {
-			"rnbqkbnr",
-           	"pppppppp",
-           	"        ",
-           	"        ",
-           	"        ",
-          	"        ",
-          	"PPPPPPPP",
-           	"RNBQKBNR"
-		   };
+	={
+		"rnbqkbnr",
+       	"pppppppp",
+       	"        ",
+       	"        ",
+       	"        ",
+      	"        ",
+      	"PPPPPPPP",
+       	"RNBQKBNR"
+	};
 
-char step[20] = "00000000000000000000";
+	char step[20] = "00000000000000000000";
 
     int i, j;
     printf("\n");
