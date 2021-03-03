@@ -4,7 +4,7 @@
 void printBoard()
 {
 	char board[8][8]
-	={
+	= {
 		"rnbqkbnr",
        	"pppppppp",
        	"        ",
