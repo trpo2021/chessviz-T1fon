@@ -1,6 +1,7 @@
 *.exe
 # Prerequisites
 *.d
+bin/chessviz
 
 # Compiled Object files
 *.slo
