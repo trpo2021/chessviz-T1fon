@@ -1,4 +1,8 @@
 #include <libchessviz/desk.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 int main()
 {
     int p, true = 1, false = 0;;
