@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-const int true = 1, false = 0;
+
 void Print_table(char Table[9][9]) // Отрисовка доски
 {
     int i, j;
