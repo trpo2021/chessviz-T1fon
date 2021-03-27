@@ -30,7 +30,7 @@ int main()
     char Name_file[30];
     do {
         printf("\nEnter correct path or file name: ");
-        scanf("%s", &Name_file);
+        scanf("%s", Name_file);
         if ((file = fopen(Name_file, "r")) != NULL)
             break;
         printf("\nERROR!"); //если путь или название файла не корректны
