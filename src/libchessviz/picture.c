@@ -7,7 +7,7 @@
 
 
 
-void Preparation (char Table_chess [9][9], unsigned int p)
+void Preparation (char Table_chess [9][9])
 {
 
     Table_chess[0][1] = 'a', Table_chess[0][2] = 'b', Table_chess[0][3] = 'c', Table_chess[0][4] = 'd',
@@ -17,14 +17,14 @@ void Preparation (char Table_chess [9][9], unsigned int p)
 	//Áåëàÿ êîììàíäà
 	Table_chess[1][1] = 'R', Table_chess[1][2] = 'N', Table_chess[1][3] = 'B', Table_chess[1][4] = 'Q',
 	Table_chess[1][5] = 'K', Table_chess[1][6] = 'B', Table_chess[1][7] = 'N', Table_chess[1][8] = 'R';
-	for (p = 0; p < 8;p++)
+	for (int p = 0; p < 8;p++)
 	{
 		Table_chess[2][p+1] = 'P';
 	}
 	//×¸ðíàÿ êîììàíäà
 	Table_chess[8][1] = 'r', Table_chess[8][2] = 'n', Table_chess[8][3] = 'b', Table_chess[8][4] = 'q',
 	Table_chess[8][5] = 'k', Table_chess[8][6] = 'b', Table_chess[8][7] = 'n', Table_chess[8][8] = 'r';
-	for (p = 0; p < 8;p++)
+	for (int p = 0; p < 8;p++)
 	{
 		Table_chess[7][p+1] = 'p';
 	}
