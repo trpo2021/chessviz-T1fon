@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <libchessviz/move.h>
+#include <libchessviz/desk.h>
 #include <math.h>
 
 void Checking_moves(FILE *file, unsigned int p, char Table_chess [9][9])
