@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void Print_table(char Table[9][9]) // Отрисовка доски
+void Print_table(char Table[9][9]) // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 {
     int i, j;
     for (i = 0; i < 9; i++) {
