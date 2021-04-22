@@ -4,6 +4,7 @@
 #include <libchessviz/tools.h>
 #include <libchessviz/desk.h>
 #include <libchessviz/move.h>
+#include <libchessviz/picture.h>
 
 int main ()
 {
