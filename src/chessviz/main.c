@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <libchess/tools.h>
+#include <libchessviz/tools.h>
+#include <libchessviz/desk.h>
+#include <libchessviz/move.h>
 
 int main ()
 {
