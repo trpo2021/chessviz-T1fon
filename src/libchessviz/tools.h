@@ -1,4 +1,5 @@
 #pragma once
 
-FILE *Checking_Resources(FILE *file, char Name_file [30]);
+#include <stdio.h>
 
+FILE* Checking_Resources(FILE* file, char Name_file[30]);
