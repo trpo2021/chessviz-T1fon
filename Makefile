@@ -39,23 +39,24 @@ all: $(APP_PATH)
 .PHONY: test
 
 test: $(TEST_PATH)
+	$(TEST_PATH)
 
 -include $(DEPS)
 
 $(APP_PATH): $(APP_OBJECTS) $(LIB_PATH)
-$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@ $(LDFLAGS) $(LDLIBS)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@ $(LDFLAGS) $(LDLIBS)
 
 $(TEST_PATH): $(TEST_OBJECTS) $(LIB_PATH) $(CTEST_PATH)
-$(CC) $(CFLAGS) $(CPPFLAGS) $(TEST_OBJECTS) $(LIB_PATH) -o $@ $(LDFLAGS) $(LDLIBS)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(TEST_OBJECTS) $(LIB_PATH) -o $@ $(LDFLAGS) $(LDLIBS)
 
 $(LIB_PATH): $(LIB_OBJECTS)
-ar rcs $@ $^
+	ar rcs $@ $^
 
 $(OBJ_DIR)/%.o: %.$(SRC_EXT)
-$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
 
 .PHONY: clean
 clean:
-$(RM) $(APP_PATH) $(LIB_PATH)
-find $(OBJ_DIR) -name '*.o' -exec $(RM) '{}' \;
-find $(OBJ_DIR) -name '*.d' -exec $(RM) '{}' \;
+	$(RM) $(APP_PATH) $(LIB_PATH)
+	find $(OBJ_DIR) -name '*.o' -exec $(RM) '{}' \;
+	find $(OBJ_DIR) -name '*.d' -exec $(RM) '{}' \;
