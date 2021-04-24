@@ -2,11 +2,11 @@
 #include <libchessviz/picture.h>
 #include <stdio.h>
 
-CTEST(suite1, test1)
+CTEST(suite1, PUSTOI)
 {
 }
 
-CTEST(suite1, test2)
+CTEST(suite1, OTRISOVKA_DOSKI)
 {
     char Table_chess[9][9], Fact_chess[9][9];
     int p, i, j;
@@ -42,3 +42,4 @@ CTEST(suite1, test2)
             ASSERT_EQUAL(Table_chess[i][j], Fact_chess[i][j]);
     }
 }
+
