@@ -11,9 +11,9 @@ CTEST(suite2, PUSTOI)
 }
 CTEST(suite2, CHEK_MOVE)
 {
-    unsigned int q;
+    unsigned int q = 0;
 	int p, i, j;
-    char Tablefact_chess[9][9], char Table_chess[9][9], Name_file[30];
+    char Tablefact_chess[9][9], char Table_chess[9][9];
     FILE* file;
     file = fopen("test.txt", "r");
     for (i = 0; i < 9; i++) {
