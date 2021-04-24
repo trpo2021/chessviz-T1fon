@@ -1,33 +1,36 @@
 #include <ctest.h>
 #include <libchessviz/move.h>
 #include <math.h>
+#include <libchessviz/picture.h>
+#include <libchessviz/tools.h>
 #include <stdlib.h>
 #include <string.h>
-#include <picture.h>
 
 CTEST(suite2, PUSTOI)
 {
 }
 CTEST(suite2, CHEK_MOVE)
 {
-	unsigned int q;
-	char fact_move[20] = {1. e2-e4};
-	char Tablefact_chess[9][9];
-	for (i = 0; i < 9; i++) {
+    unsigned int q;
+	int p, i, j;
+    char Tablefact_chess[9][9], char Table_chess[9][9], Name_file[30];
+    FILE* file;
+    file = fopen("test.txt", "r");
+    for (i = 0; i < 9; i++) {
         for (j = 0; j < 9; j++) {
             Tablefact_chess[i][j] = ' ';
         }
     }
-	Preparation(Tablefact_chess);
-	Checking_moves(fact_move, q, Tablefact_chess);
-    int p, i, j;
-    char Table_chess[9][9];
+    Preparation(Tablefact_chess);
+    Checking_moves(file, q, Tablefact_chess);
+
+
     for (i = 0; i < 9; i++) {
         for (j = 0; j < 9; j++) {
             Table_chess[i][j] = ' ';
         }
     }
-    
+
     Table_chess[0][1] = 'a', Table_chess[0][2] = 'b', Table_chess[0][3] = 'c',
     Table_chess[0][4] = 'd', Table_chess[0][5] = 'e', Table_chess[0][6] = 'f',
     Table_chess[0][7] = 'g', Table_chess[0][8] = 'h', Table_chess[1][0] = '1',
@@ -48,7 +51,7 @@ CTEST(suite2, CHEK_MOVE)
     Table_chess[7][1] = 'p', Table_chess[7][2] = 'p', Table_chess[7][3] = 'p',
     Table_chess[7][4] = 'p', Table_chess[5][5] = 'p', Table_chess[7][6] = 'p',
     Table_chess[7][7] = 'p', Table_chess[7][8] = 'p';
-    
+
     for (i = 0; i < 9; i++) {
         for (j = 0; j < 9; j++)
             ASSERT_EQUAL(Table_chess[i][j], Tablefact_chess[i][j]);
