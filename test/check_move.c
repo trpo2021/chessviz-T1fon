@@ -43,10 +43,10 @@ CTEST(suite2, CHEK_MOVE)
     //×¸ðíàÿ êîììàíäà
     Table_chess[8][1] = 'r'; Table_chess[8][2] = 'n'; Table_chess[8][3] = 'b';
     Table_chess[8][4] = 'q'; Table_chess[8][5] = 'k'; Table_chess[8][6] = 'b';
-    Table_chess[8][7] = 'n'; Table_chess[8][8] = 'r';
-    Table_chess[7][1] = 'p'; Table_chess[7][2] = 'p'; Table_chess[7][3] = 'p';
-    Table_chess[7][4] = 'p'; Table_chess[5][5] = 'p'; Table_chess[7][6] = 'p';
-    Table_chess[7][7] = 'p'; Table_chess[7][8] = 'p';
+    Table_chess[8][7] = 'n'; Table_chess[8][8] = 'r'; Table_chess[7][1] = 'p';
+    Table_chess[7][2] = 'p'; Table_chess[7][3] = 'p'; Table_chess[7][4] = 'p';
+    Table_chess[7][5] = ' '; Table_chess[7][6] = 'p'; Table_chess[7][7] = 'p';
+    Table_chess[7][8] = 'p'; Table_chess[5][5] = 'p';
 
     for (i = 0; i < 9; i++) 
 	{
