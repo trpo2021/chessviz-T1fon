@@ -2,6 +2,7 @@
 # Prerequisites
 *.d
 bin/chessviz
+bin/chessviz-test
 
 # Compiled Object files
 *.slo
