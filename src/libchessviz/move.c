@@ -106,6 +106,7 @@ void Checking_moves(FILE* file, unsigned int p, char Table_chess[9][9])
             Err_flag = false;
         }
     } while (!feof(file));
+    rewind(file);
     if (Err_pos > 0) {
         printf("Wrong moves in these lines: ");
         for (p = 0; p < Err_pos; p++) {
